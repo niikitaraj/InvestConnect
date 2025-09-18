@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discover - InvestConnect</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/discover.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <i class="fas fa-chart-line"></i>
+                <span>InvestConnect</span>
+            </div>
+            <div class="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="discover.html" class="nav-link active">Discover</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+                <div class="nav-buttons">
+                    <a href="login.html" class="btn btn-outline">Sign In</a>
+                    <a href="signup.html" class="btn btn-primary">Get Started</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="discover-page">
+        <div class="container">
+            <!-- Header -->
+            <div class="page-header">
+                <h1>Discover Opportunities</h1>
+                <p>Find the perfect match for your investment goals or startup needs</p>
+            </div>
+
+            <!-- Filters -->
+            <div class="filters-section">
+                <div class="filters-grid">
+                    <div class="filter-group">
+                        <label for="category">Category</label>
+                        <select id="category" class="form-select">
+                            <option value="">All Categories</option>
+                            <option value="startups">Startups</option>
+                            <option value="investors">Investors</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label for="industry">Industry</label>
+                        <select id="industry" class="form-select">
+                            <option value="">All Industries</option>
+                            <option value="tech">Technology</option>
+                            <option value="healthcare">Healthcare</option>
+                            <option value="fintech">FinTech</option>
+                            <option value="ecommerce">E-commerce</option>
+                            <option value="ai">AI/ML</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label for="stage">Stage</label>
+                        <select id="stage" class="form-select">
+                            <option value="">All Stages</option>
+                            <option value="seed">Seed</option>
+                            <option value="series-a">Series A</option>
+                            <option value="series-b">Series B</option>
+                            <option value="growth">Growth</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label for="location">Location</label>
+                        <select id="location" class="form-select">
+                            <option value="">All Locations</option>
+                            <option value="us">United States</option>
+                            <option value="uk">United Kingdom</option>
+                            <option value="canada">Canada</option>
+                            <option value="germany">Germany</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Results -->
+            <div class="results-section">
+                <div class="results-header">
+                    <h2>Featured Opportunities</h2>
+                    <div class="view-toggle">
+                        <button class="view-btn active" data-view="grid">
+                            <i class="fas fa-th"></i>
+                        </button>
+                        <button class="view-btn" data-view="list">
+                            <i class="fas fa-list"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="opportunities-grid" id="opportunitiesGrid">
+                    <!-- Startup Cards -->
+                    <div class="opportunity-card startup-card">
+                        <div class="card-header">
+                            <div class="company-logo">
+                                <i class="fas fa-rocket"></i>
+                            </div>
+                            <div class="company-info">
+                                <h3>TechFlow AI</h3>
+                                <span class="company-type">Startup</span>
+                            </div>
+                            <div class="card-actions">
+                                <button class="action-btn">
+                                    <i class="fas fa-heart"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <p class="company-description">
+                                Revolutionary AI platform for automated workflow optimization in enterprise environments.
+                            </p>
+                            <div class="company-tags">
+                                <span class="tag">AI/ML</span>
+                                <span class="tag">Enterprise</span>
+                                <span class="tag">Series A</span>
+                            </div>
+                            <div class="company-stats">
+                                <div class="stat">
+                                    <span class="stat-label">Seeking</span>
+                                    <span class="stat-value">$5M</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="stat-label">Location</span>
+                                    <span class="stat-value">San Francisco</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <button class="btn btn-primary btn-small">View Details</button>
+                            <button class="btn btn-outline btn-small">Contact</button>
+                        </div>
+                    </div>
+
+                    <!-- Investor Cards -->
+                    <div class="opportunity-card investor-card">
+                        <div class="card-header">
+                            <div class="company-logo investor-logo">
+                                <i class="fas fa-building"></i>
+                            </div>
+                            <div class="company-info">
+                                <h3>Venture Capital Partners</h3>
+                                <span class="company-type">Investor</span>
+                            </div>
+                            <div class="card-actions">
+                                <button class="action-btn">
+                                    <i class="fas fa-heart"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <p class="company-description">
+                                Early-stage VC focused on B2B SaaS and AI startups with proven traction and strong teams.
+                            </p>
+                            <div class="company-tags">
+                                <span class="tag">B2B SaaS</span>
+                                <span class="tag">AI/ML</span>
+                                <span class="tag">Seed-Series A</span>
+                            </div>
+                            <div class="company-stats">
+                                <div class="stat">
+                                    <span class="stat-label">Investment Range</span>
+                                    <span class="stat-value">$1M-$10M</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="stat-label">Portfolio</span>
+                                    <span class="stat-value">45 Companies</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <button class="btn btn-primary btn-small">View Profile</button>
+                            <button class="btn btn-outline btn-small">Connect</button>
+                        </div>
+                    </div>
+
+                    <!-- More cards would be dynamically generated -->
+                </div>
+
+                <div class="load-more">
+                    <button class="btn btn-outline">Load More Opportunities</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="scripts/main.js"></script>
+    <script src="scripts/discover.js"></script>
+</body>
+</html>
